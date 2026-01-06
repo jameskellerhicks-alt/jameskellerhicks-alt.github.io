@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About | Jake Hicks</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="brand"><a href="/">Jake Hicks</a></div>
+    <nav class="navlinks">
+      <a class="pill" href="/">Home</a>
+      <a class="pill" href="/projects/">Projects</a>
+      <a class="pill" href="/about/">About</a>
+      <a class="pill" href="/contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="card">
+    <h1 class="h1" style="font-size:34px;">About</h1>
+
+    <p class="muted">
+      I’m Jake Hicks, a Master’s student in Urban & Regional Planning focused on transportation and GIS.
+      I build clear, decision-ready maps and analyses that connect planning questions to real-world implementation.
+    </p>
+
+    <div class="card" style="margin-top:14px;">
+      <h2 class="h2">Focus areas</h2>
+      <ul class="muted" style="line-height:1.7; margin-top:10px;">
+        <li>Multimodal transportation planning (bike, bus, safety, connectivity)</li>
+        <li>GIS workflows (ArcGIS Pro → ArcGIS Online / StoryMaps / dashboards)</li>
+        <li>Research synthesis & policy writing (case studies, briefs, presentations)</li>
+      </ul>
+    </div>
+
+    <div class="card" style="margin-top:14px;">
+      <h2 class="h2">Tools</h2>
+      <p class="muted" style="margin:0;">
+        ArcGIS Pro • ArcGIS Online • StoryMaps • Excel • (basic) Python • Canva/Illustrator (light)
+      </p>
+    </div>
+
+    <div class="btnrow" style="margin-top:14px;">
+      <a class="btn" href="/assets/Jake-Hicks-Resume.pdf">Download Resume (PDF)</a>
+      <a class="btn" href="/projects/">View Projects →</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © <span id="y"></span> Jake Hicks
+  </footer>
+</main>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
