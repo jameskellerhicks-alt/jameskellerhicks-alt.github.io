@@ -3,11 +3,101 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Jake Hicks | Portfolio</title>
+  <title>Jake Hicks | Urban Planning & GIS Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta name="description" content="Urban planning + GIS portfolio featuring transportation, mapping, and data visualization projects." />
 </head>
-<body style="font-family:system-ui; padding:30px; max-width:900px; margin:0 auto;">
-  <h1>Jake Hicks</h1>
-  <p>Urban Planning + GIS Portfolio</p>
-  <p>If you can see this page, GitHub Pages is working ✅</p>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="brand"><a href="/">Jake Hicks</a></div>
+    <nav class="navlinks">
+      <a class="pill" href="/">Home</a>
+      <a class="pill" href="/projects/">Projects</a>
+      <a class="pill" href="/about/">About</a>
+      <a class="pill" href="/contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div class="card">
+      <h1 class="h1">Urban Planning + GIS</h1>
+      <p class="muted">
+        I build clear, decision-ready maps and analyses for transportation, place-based planning,
+        and policy questions—using ArcGIS Pro/AGOL, data visualization, and research synthesis.
+      </p>
+      <div class="btnrow">
+        <a class="btn" href="/projects/">View Projects →</a>
+        <a class="btn" href="/assets/Jake-Hicks-Resume.pdf">Download Resume (PDF)</a>
+        <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <p class="muted" style="margin-top:12px;">
+        Next: we’ll add your resume PDF and update the LinkedIn link.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2 class="h2">Featured strengths</h2>
+      <div class="kv"><div>Focus</div><div>Multimodal transportation, urban policy, district planning</div></div>
+      <div class="kv"><div>Tools</div><div>ArcGIS Pro, ArcGIS Online, StoryMaps, Excel, Python (basic)</div></div>
+      <div class="kv"><div>Outputs</div><div>Dashboards, suitability models, maps, reports, presentations</div></div>
+      <div class="kv"><div>Location</div><div>DC region • open to Wilmington, DE roles</div></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 class="h2">Featured projects</h2>
+    <p class="muted">These are placeholders — we’ll swap them with your real projects next.</p>
+
+    <div class="grid">
+      <article class="card project-card">
+        <img src="assets/img/project-placeholder.jpg" alt="Project thumbnail" />
+        <h3 style="margin:0 0 6px;">Bicycle Infrastructure Prioritization</h3>
+        <p class="muted" style="margin:0;">Weighted suitability model + map outputs for corridor prioritization.</p>
+        <div class="tags">
+          <span class="tag">ArcGIS Pro</span><span class="tag">Suitability</span><span class="tag">Transportation</span>
+        </div>
+        <div class="btnrow" style="margin-top:12px;">
+          <a class="btn" href="/projects/">Open →</a>
+        </div>
+      </article>
+
+      <article class="card project-card">
+        <img src="assets/img/project-placeholder.jpg" alt="Project thumbnail" />
+        <h3 style="margin:0 0 6px;">University District Precedents</h3>
+        <p class="muted" style="margin:0;">Case study synthesis supporting a downtown campus / innovation district concept.</p>
+        <div class="tags">
+          <span class="tag">Research</span><span class="tag">Writing</span><span class="tag">Urban Policy</span>
+        </div>
+        <div class="btnrow" style="margin-top:12px;">
+          <a class="btn" href="/projects/">Open →</a>
+        </div>
+      </article>
+
+      <article class="card project-card">
+        <img src="assets/img/project-placeholder.jpg" alt="Project thumbnail" />
+        <h3 style="margin:0 0 6px;">Fare-Free Bus Programs (Capstone)</h3>
+        <p class="muted" style="margin:0;">Comparative policy analysis framework + data visualization plan.</p>
+        <div class="tags">
+          <span class="tag">Transit</span><span class="tag">Policy</span><span class="tag">GIS</span>
+        </div>
+        <div class="btnrow" style="margin-top:12px;">
+          <a class="btn" href="/projects/">Open →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © <span id="y"></span> Jake Hicks • Built on GitHub Pages
+  </footer>
+</main>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
