@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects | Jake Hicks</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="brand"><a href="/">Jake Hicks</a></div>
+    <nav class="navlinks">
+      <a class="pill" href="/">Home</a>
+      <a class="pill" href="/projects/">Projects</a>
+      <a class="pill" href="/about/">About</a>
+      <a class="pill" href="/contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="card">
+    <h1 class="h1" style="font-size:34px;">Projects</h1>
+    <p class="muted">A selection of GIS, transportation, and planning work. We’ll replace these placeholders with your real projects next.</p>
+  </section>
+
+  <section class="grid">
+    <article class="card project-card">
+      <img src="/assets/img/project-placeholder.jpg" alt="Project thumbnail" />
+      <h3 style="margin:0 0 6px;">Bicycle Infrastructure Prioritization</h3>
+      <p class="muted" style="margin:0;">Suitability model, scoring, and map outputs for corridor prioritization.</p>
+      <div class="tags">
+        <span class="tag">ArcGIS Pro</span><span class="tag">Analysis</span><span class="tag">Safety</span>
+      </div>
+      <div class="btnrow" style="margin-top:12px;">
+        <a class="btn" href="/projects/project-1.html">Project page →</a>
+      </div>
+    </article>
+
+    <article class="card project-card">
+      <img src="/assets/img/project-placeholder.jpg" alt="Project thumbnail" />
+      <h3 style="margin:0 0 6px;">University District Precedents</h3>
+      <p class="muted" style="margin:0;">Case study synthesis supporting a downtown campus / innovation district concept.</p>
+      <div class="tags">
+        <span class="tag">Research</span><span class="tag">Writing</span><span class="tag">Urban Policy</span>
+      </div>
+      <div class="btnrow" style="margin-top:12px;">
+        <a class="btn" href="/projects/project-2.html">Project page →</a>
+      </div>
+    </article>
+
+    <article class="card project-card">
+      <img src="/assets/img/project-placeholder.jpg" alt="Project thumbnail" />
+      <h3 style="margin:0 0 6px;">Fare-Free Bus Programs (Capstone)</h3>
+      <p class="muted" style="margin:0;">Comparative policy analysis framework + data visualization plan.</p>
+      <div class="tags">
+        <span class="tag">Transit</span><span class="tag">Policy</span><span class="tag">Evaluation</span>
+      </div>
+      <div class="btnrow" style="margin-top:12px;">
+        <a class="btn" href="/projects/project-3.html">Project page →</a>
+      </div>
+    </article>
+  </section>
+
+  <footer class="footer">
+    © <span id="y"></span> Jake Hicks
+  </footer>
+</main>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
