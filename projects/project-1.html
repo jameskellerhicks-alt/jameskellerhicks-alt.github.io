@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bicycle Infrastructure Prioritization | Jake Hicks</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <meta name="description" content="Bicycle infrastructure prioritization using a weighted suitability model to rank corridors for investment." />
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="brand"><a href="/">Jake Hicks</a></div>
+    <nav class="navlinks">
+      <a class="pill" href="/">Home</a>
+      <a class="pill" href="/projects/">Projects</a>
+      <a class="pill" href="/about/">About</a>
+      <a class="pill" href="/contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="card">
+    <h1 class="h1" style="font-size:34px;">Bicycle Infrastructure Prioritization</h1>
+    <p class="muted">
+      A weighted suitability model to identify and rank corridors where bicycle infrastructure investment could deliver the most benefit.
+    </p>
+
+    <div class="tags">
+      <span class="tag">ArcGIS Pro</span>
+      <span class="tag">Suitability Modeling</span>
+      <span class="tag">Transportation Planning</span>
+      <span class="tag">Data Visualization</span>
+    </div>
+
+    <div class="btnrow">
+      <a class="btn" href="/projects/">← Back to Projects</a>
+      <a class="btn" href="#" target="_blank" rel="noopener">StoryMap (add link)</a>
+      <a class="btn" href="#" target="_blank" rel="noopener">Web Map (add link)</a>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 class="h2">Project summary</h2>
+
+    <div class="kv"><div>Goal</div>
+      <div>Prioritize corridors for bicycle improvements using a transparent, criteria-based scoring approach.</div>
+    </div>
+
+    <div class="kv"><div>My role</div>
+      <div>Built the GIS workflow/model, prepared the map outputs, and wrote the project narrative.</div>
+    </div>
+
+    <div class="kv"><div>Tools</div>
+      <div>ArcGIS Pro, ArcGIS Online (optional publishing), Excel (optional scoring), basic Python (optional cleanup).</div>
+    </div>
+
+    <div class="kv"><div>Method</div>
+      <div>
+        Selected criteria (e.g., connectivity, proximity to destinations/transit, safety/context), normalized values, applied weights,
+        and generated a corridor priority score for mapping and ranking.
+      </div>
+    </div>
+
+    <div class="kv"><div>Output</div>
+      <div>Priority corridor map + a shortlist of top-ranked segments for implementation discussion.</div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 class="h2">Interactive map (optional)</h2>
+    <p class="muted">
+      If you have an ArcGIS Online web map, paste your embed URL into the iframe <code>src</code> below.
+      If you don’t have one yet, you can leave this section as-is for now.
+    </p>
+
+    <!-- Replace the src with your ArcGIS embed URL -->
+    <iframe class="embed" src="https://www.arcgis.com/apps/Embed/index.html?webmap=YOUR_WEBMAP_ID" allowfullscreen></iframe>
+  </section>
+
+  <section class="card">
+    <h2 class="h2">Key visuals</h2>
+    <p class="muted">Add 2–3 screenshots (final map, modelbuilder diagram, or results table).</p>
+
+    <div class="grid">
+      <div class="card">
+        <img src="/assets/img/project-placeholder.jpg" alt="Final map screenshot" style="width:100%; border-radius:12px; border:1px solid var(--border);" />
+      </div>
+      <div class="card">
+        <img src="/assets/img/project-placeholder.jpg" alt="Workflow / modelbuilder screenshot" style="width:100%; border-radius:12px; border:1px solid var(--border);" />
+      </div>
+      <div class="card">
+        <img src="/assets/img/project-placeholder.jpg" alt="Results / priority corridors screenshot" style="width:100%; border-radius:12px; border:1px solid var(--border);" />
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 class="h2">What I’d improve next</h2>
+    <ul class="muted" style="line-height:1.7; margin-top:10px;">
+      <li>Validate the scoring with local crash history and stakeholder feedback.</li>
+      <li>Run sensitivity checks (how results change when weights change).</li>
+      <li>Package outputs into a short brief for decision-makers.</li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    © <span id="y"></span> Jake Hicks
+  </footer>
+
+</main>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
